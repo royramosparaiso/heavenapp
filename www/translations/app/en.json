@@ -1,0 +1,101 @@
+{
+	"config_ios" : {
+		"NSCameraUsageDescription": "Take pictures",
+		"CFBundleDisplayName": "Some App Name",
+		"CFBundleName": "Some App Name"
+	},
+	"config_android" : {
+		"app_name": "Some App Name"
+	},
+	"app" : {
+		"HAVE_MAIL_TITLE": "You have mail.",
+		"HAVE_MAIL_MSG": "%1$@ has you a message titled \\\"%2$@\\\""
+	},
+    "general": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "opened": "Opened",
+        "closed": "Closed",
+        "fruit": "Fruit",
+        "vegetables": "Vegetables",
+        "meat": "Meat",
+        "fish": "Fish",
+        "quantity": "Quantity",
+        "measure": "Kg",
+        "data": "Data",
+        "beneficiary": "Beneficiary",
+        "productSchedule": "Product and schedule",
+        "provider": "Provider",
+        "adress": "Adress",
+        "province": "Province",
+        "town": "Town",
+        "postalCode": "Postal code",
+        "telephone": "Telephone",
+        "email": "E-mail",
+        "product": "Product",
+        "schedule": "Schedule",
+        "pickUp": "Recogida",
+        "delivery": "Entrega"
+    },
+    "errors": {
+        "errorUserPassword": "Error entering username or password. Try again",
+        "errorConnecting": "An error occurred while connecting to the server: ",
+        "errorUserInactive": "Cannot be accessed with this user",
+        "errorConnection": "You have no Internet connection. Check your configuration",
+        "errorServingFood": "You must select a product and set a quantity",
+        "errorVolunteerOther": "Another volunteer has already confirmed the collection and delivery of the donation",
+        "errorSetQuantity": "You must set a quantity",
+        "errorWrongQuantity": "Wrong quantity"
+    },
+    "buttons": {
+        "access": "Access",
+        "send": "Send",
+        "back": "Back",
+        "confirm": "Confirrm",
+        "confirmPickup": "Confirmar Pickup",
+        "confirmDelivaery": "Confirm delivaery",
+        "cancel": "Cancel",
+        "takeSelfie": "Take Selfie",
+        "AcceptSend": "Accept and send",
+        "retakeSelfie": "Repeat Selfie",
+        "finish": "Finish",
+        "refresh": "Refresh",
+        "acceptDonation": "Accept donation"
+    },
+    "login": {
+        "user": "User",
+        "userPlaceholder": "Enter username",
+        "password": "Password",
+        "passwordPlaceholder": "Enter password",
+        "showPass": "Show password"
+    },
+    "donations": {
+        "title": "Food donation",
+        "subtitle": "Select the type of food and set the quantity",
+        "success": "The donation has been communicated successfully. Awaiting confirmation"
+    },
+    "volunteer": {
+        "title01": "You have received a food delivery request",
+        "title02": "There are several requests for food delivery",
+        "title03": "There are currently no deliveries in your area",
+        "makePickup": "you can now go to the store to collect the donation",
+        "makeDelivery": "You can now deliver. Confirm it once you have done it",
+        "sendSelfie": "Send the selfie of the delivery confirmation.",
+        "successDelivaery": "Donation delivery has been completed successfully"
+    },
+    "beneficiary": {
+        "title01": "There are various donations in your area",
+        "subtitle01": "Choose one from the list and put a quantity if you want only part",
+        "title02": "There is a food donation in your area",
+        "subtitle02": "Set an amount to accept only a portion of the donation.",
+        "title03": "There are currently no donations in your area",
+        "subtitle03": "When there is a donation in your area you will receive a notification",
+        "successPetition": "The food delivery request has been successfully completed. Awaiting shipment confirmation"
+    }
+
+}

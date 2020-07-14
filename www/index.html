@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>FoodieAngels</title>
+    <meta name="description" content="FoodieAngels" />
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:;default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/libs/bootstrap4_4_1/bootstrap.min.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="css/libs/swiper-5.3.0/swiper.min.css">
+
+    <!-- estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div id="aviso"></div>
+
+    <div class="velo">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+
+      <div class="swiper-wrapper">
+
+
+        <!-- ************************************* -->
+        <!-- ************************************* -->
+        <!--            PORTADA slide 0            -->
+        <!-- ************************************* -->
+        <!-- ************************************* -->
+        <div class="swiper-slide">
+
+          <section id="portada">
+            <table>
+              <tr>
+                <td>
+                  <img class="logoAnimacion" src="img/foodieangels_logo.png">            
+                </td>
+              </tr>
+            </table>
+          </section>
+
+        </div>
+
+
+
+
+        <!-- ************************************* -->
+        <!-- ************************************* -->
+        <!--            LOGIN slide 1              -->
+        <!-- ************************************* -->
+        <!-- ************************************* -->
+        <div class="swiper-slide">
+          
+            <section id="login">
+
+                <div class="contenido">
+
+                    <img src="img/foodieangels_logo.png">
+
+                    <form>
+
+                        <div class="form-group">
+                            <label for="InputUser1"><!--login.user--></label>
+                            <input type="text" class="form-control" id="InputUser1" value="" placeholder="<!--login.userPlaceholder-->">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="InputPassword"><!--login.password--></label>
+                            <input type="password" class="form-control" id="InputPassword" value="" placeholder="<!--login.passwordPlaceholder-->">
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="Check">
+                            <label class="form-check-label" for="Check"><!--login.showPass--></label>
+                        </div>
+                      
+                        <div class="centrar">
+                            <button type="button" disabled class="btn btn-primary btn-lg"><!--buttons.access--></button>  
+                        </div>                    
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+
+        <!-- ************************************* -->
+        <!-- ************************************* -->
+        <!--          DONACIÓN slide 2             -->
+        <!-- ************************************* -->
+        <!-- ************************************* -->
+        <div class="swiper-slide">
+          
+          <section id="donacion">
+
+            <div class="container">
+
+              <i class="fa fa-power-off desconectar" aria-hidden="true"></i>
+
+              <h1><!--donations.title--></h1>
+              <h2><!--donations.subtitle--></h2>
+
+              <div class="contScroll">
+
+                <div class="seleccion">
+
+                    <div class="row">
+
+                        <div class="col-6 col-xl-3 elemento fruta" data-codigo="3">
+                            <img src="img/fruit.png" alt="<!--general.fruit-->">
+                            <span><!--general.fruit--></span>
+                        </div>
+
+                        <div class="col-6 col-xl-3 elemento verdura" data-codigo="4">
+                            <img src="img/vegetable.png" alt="<!--general.vegetables-->">
+                            <span><!--general.vegetables--></span>
+                        </div>
+
+                        <div class="col-6 col-xl-3 elemento carne" data-codigo="1">
+                            <img src="img/meat.png" alt="<!--general.meat-->">
+                            <span><!--general.meat--></span>
+                        </div>
+
+                        <div class="col-6 col-xl-3 elemento pescado" data-codigo="2">
+                            <img src="img/fish.png" alt="<!--general.fish-->">
+                            <span><!--general.fish--></span>
+                        </div>
+
+                    </div>                
+
+                </div>
+
+                <div class="cantidad">
+                    <div class="row no-gutters">
+                        <div class="col-10 form-group">
+                            <input type="number" class="form-control form-control-lg" id="prodCant" placeholder="<!--general.quantity-->">
+                        </div>
+                        <div class="col-2 tit"><!--general.measure--></div>
+                    </div>           
+                </div>
+
+              </div>
+
+              <button type="button" class="btn btn-primary btn-block btn-lg"><!--buttons.send--></button>  
+
+
+            </div>
+
+            
+
+          </section>
+
+        </div>
+
+
+
+
+        <!-- ************************************* -->
+        <!-- ************************************* -->
+        <!--         ÉXITO DONACIÓN slide 3        -->
+        <!-- ************************************* -->
+        <!-- ************************************* -->
+        <div class="swiper-slide">
+
+          <section id="exitoDonacion" class="mensaje">
+            <table>
+              <tr>
+                <td>
+
+                  <i class="fa fa-thumbs-up manoAnimacion" aria-hidden="true"></i>
+                  <p><!--donations.success--></p>
+                  <div class="centrar">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"><!--buttons.back--></button>  
+                  </div>  
+
+                </td>
+              </tr>
+            </table>
+          </section>
+
+        </div>
+
+
+
+
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <!--  CONFIRMACIÓN DEL VOLUNTARIO PARTE 1 slide 4  -->
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <div class="swiper-slide">
+          
+          <section id="confirmVoluntario1">
+
+            <div class="container">
+
+              <div class="cabecera">
+
+                <i class="fa fa-chevron-left volver noDisplay" data-tipo="voluntario" aria-hidden="true"></i>
+                <i class="fa fa-power-off desconectar" aria-hidden="true"></i>
+                <i class="fa fa-refresh refrescar" data-tipo="voluntario" aria-hidden="true"></i>
+           
+                <h1><!--volunteer.title--></h1>
+
+              </div>
+
+              <div class="contenido">
+
+                <div class="contScroll">
+
+                  <!-- LISTA -->
+                  <ul class="listado noDisplay">
+                  </ul>
+
+                  <!-- DETALLE -->
+                  <div class="detalle noDisplay">
+                  </div>
+
+                </div> <!-- Cierra <div class="contScroll"> -->
+
+                <button type="button" class="btn btn-primary btn-block btn-lg noDisplay"><!--buttons.confirm--></button>
+
+              </div>
+
+            </div>            
+
+          </section>
+
+        </div>
+
+
+
+
+        <!-- **************************************************** -->
+        <!-- **************************************************** -->
+        <!-- CONFIRMACIÓN DEL VOLUNTARIO PARTE 2 slide 5          -->
+        <!-- Confirmación de la recogida                          -->
+        <!-- **************************************************** -->
+        <!-- **************************************************** -->
+        <div class="swiper-slide">
+
+          <section id="confirmVoluntario2" class="mensaje">
+            <table>
+              <tr>
+                <td>
+                  </i> <i class="fa fa-arrow-right flechaAnimacion" aria-hidden="true"></i> <img src="img/store.png" alt="">
+                  <p class="texto"><!--volunteer.makePickup--></p>
+
+                  <!-- Se muestran la dirección y el teléfono del proveedor-->
+                  <div class="datos">
+                  </div>
+
+                  <div class="centrar">
+                    <button type="button" class="btn btn-primary btn-lg btn-block confirmar"><!--buttons.confirmPickup--></button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block cancelar"><!--buttons.cancel--></button>
+                  </div>  
+
+                </td>
+              </tr>
+            </table>
+          </section>
+
+        </div>
+
+
+
+
+        <!-- **************************************************** -->
+        <!-- **************************************************** -->
+        <!-- CONFIRMACIÓN DEL VOLUNTARIO PARTE 3 slide 6          -->
+        <!-- Confirmación de la entrega                           -->
+        <!-- **************************************************** -->
+        <!-- **************************************************** -->
+        <div class="swiper-slide">
+
+          <section id="confirmVoluntario3" class="mensaje">
+            <table>
+              <tr>
+                <td>
+                  <i class="fa fa-shopping-bag bolsaAnimacion" aria-hidden="true"></i> <i class="fa fa-arrow-right flechaAnimacion" aria-hidden="true"></i>
+                  <p class="texto"><<!--volunteer.makeDelivery--></p>
+
+                  <!-- Se muestran la dirección y el teléfono del beneficiario-->
+                  <div class="datos">
+                  </div>
+
+                  <div class="centrar">
+                    <button type="button" class="btn btn-primary btn-lg btn-block confirmar"><!--buttons.confirmDelivaery--></button>
+                    <!-- <button type="button" class="btn btn-secondary btn-lg btn-block cancelar"><!--buttons.cancel--> <!-- </button> -->
+                  </div>  
+
+                </td>
+              </tr>
+            </table>
+          </section>
+
+        </div>
+
+
+
+
+        <!-- **************************************************** -->
+        <!-- **************************************************** -->
+        <!-- CONFIRMACIÓN DEL VOLUNTARIO PARTE 4 slide 7          -->
+        <!-- Envío de foto de  confirmación de entrega            -->
+        <!-- **************************************************** -->
+        <!-- **************************************************** -->
+        <div class="swiper-slide">
+
+          <section id="confirmVoluntario4" class="mensaje">
+            <table>
+              <tr>
+                <td>
+
+                    <div class="paso1 noDisplay">
+                        <img class="destello destelloAnimacion" src="img/destello02_outline.png" alt="">
+                        <i class="fa fa-camera" aria-hidden="true"></i>
+                        <p><!--volunteer.sendSelfie--></p>
+                        <button type="button" class="btn btn-primary btn-block btn-lg tomaSelfie"><!--buttons.takeSelfie--></button>                        
+                    </div>
+
+                    <div class="paso2 noDisplay">
+                        <figure>
+                        </figure>                        
+                        <button type="button" class="btn btn-primary btn-block btn-lg enviaSelfie"><i class="fa fa-thumbs-up" aria-hidden="true"></i><!--buttons.AcceptSend--></button>
+                        <button type="button" class="btn btn-secondary btn-block btn-lg tomaSelfie"><i class="fa fa-repeat" aria-hidden="true"></i><!--buttons.retakeSelfie--></button>
+                    </div>
+
+                    <!--
+                    <div class="form-group">
+                        <input type="file" accept="image/*" id="selfie" name="selfie" class="selfie form-control form-control-lg" placeholder="Foto">
+                        <label for="selfie">Enviar Selfie</label>
+                    </div>
+                    -->
+
+                </td>
+              </tr>
+            </table>
+          </section>
+
+        </div>
+
+
+
+
+        <!-- **************************************************** -->
+        <!-- **************************************************** -->
+        <!-- CONFIRMACIÓN DEL VOLUNTARIO PARTE 5 slide 8          -->
+        <!-- confirmación final de la entrega                     -->
+        <!-- **************************************************** -->
+        <!-- **************************************************** -->
+        <div class="swiper-slide">
+
+          <section id="confirmVoluntario5" class="mensaje">
+            <table>
+              <tr>
+                <td>
+
+                  <i class="fa fa-thumbs-up manoAnimacion" aria-hidden="true"></i>
+                  <p><!--volunteer.successDelivaery--></p>
+                  <div class="centrar">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"><!--buttons.finish--></button>
+                  </div>  
+
+                </td>
+              </tr>
+            </table>
+          </section>
+
+        </div>
+
+
+
+
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <!--  ACEPTACIÓN DEL BENEFICIARIO slide 9          -->
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <div class="swiper-slide">
+          
+            <section id="aceptBeneficiario">
+
+                <div class="container">
+
+                    <div class="cabecera">
+
+                      <i class="fa fa-chevron-left volver noDisplay" data-tipo="beneficiario" aria-hidden="true"></i>
+                      <i class="fa fa-power-off desconectar" aria-hidden="true"></i>
+                      <i class="fa fa-refresh refrescar" data-tipo="beneficiario" aria-hidden="true"></i>
+           
+                      <h1><!--beneficiary.title--></h1>
+                      <h2><!--beneficiary.subtitle--></h2>
+
+                    </div>
+
+
+                    <div class="contenido">
+
+                      <div class="contScroll">
+
+                        <!-- LISTA -->
+                        <ul class="listado noDisplay">
+                        </ul>
+                        
+
+                        <!-- DETALLE -->
+                        <ul class="datos noDisplay">
+                          <li class="product">
+                            <div class="foto">
+                            </div>
+                            <span class="texto">
+                            </span>                                
+                          </li>
+                          <li class="cant">
+                            <div class="icono">
+                              <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                            </div>
+                            <span class="texto">
+                            </span>  
+                          </li>
+                        </ul>
+
+                        <div class="cantidad noDisplay">
+                          <div class="row no-gutters">
+                            <div class="col-10 form-group">
+                              <input type="number" class="form-control form-control-lg" id="prodCant" placeholder="Cantidad">
+                            </div>
+                            <div class="col-2 tit"><!--general.measure--></div>
+                          </div>     
+                        </div>
+                      
+
+
+
+
+
+
+                      </div><!-- Cierra <div class="contScroll"> -->
+
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-block btn-lg noDisplay"><!--buttons.acceptDonation--></button>
+
+                </div>
+
+          </section>
+
+        </div>
+
+
+
+
+        <!-- **************************************************** -->
+        <!-- **************************************************** -->
+        <!-- ÉXITO DE CONFIRMACIÓN DEL BENEFICIARIO slide 10       -->
+        <!-- **************************************************** -->
+        <!-- **************************************************** -->
+        <div class="swiper-slide">
+
+          <section id="exitoConfirmBeneficiario" class="mensaje">
+            <table>
+              <tr>
+                <td>
+
+                  <i class="fa fa-shopping-basket bolsaAnimacion" aria-hidden="true"></i>
+                  <p><!--beneficiary.successPetition--></p>
+                  <div class="centrar">
+                    <button type="button" class="btn btn-primary btn-lg btn-block refrescar"><!--buttons.refresh--></button>
+                    <!-- <button type="button" class="btn btn-primary btn-lg btn-block terminar"><!--buttons.finish--> <!--</button> -->
+                  </div>  
+
+                </td>
+              </tr>
+            </table>
+          </section>
+
+        </div>
+
+
+
+
+
+      </div>
+      
+      <!-- Add Pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+
+    </div>
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!-- jquery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <script src="js/libs/jquery3_4_1/jquery-3.4.1.min.js" ></script>
+
+    <!-- popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <script src="js/libs/popper1_16_0/popper.min.js" ></script>
+    
+    <!-- bootstrap -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src="js/libs/bootstrap4_4_1/bootstrap.min.js" ></script>
+
+    <!-- swiper -->
+    <script src="js/libs/swiper-5.3.0/swiper.min.js" ></script>
+
+    <!-- funciones javascript -->
+    <script src="js/funciones.js" ></script>
+
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>

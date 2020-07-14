@@ -1,0 +1,100 @@
+{
+	"config_ios" : {
+		"NSCameraUsageDescription": "Tomar fotos",
+		"CFBundleDisplayName": "FoodieAngels",
+		"CFBundleName": "FoodieAngels"
+	},
+	"config_android" : {
+		"app_name": "FoodieAngels"
+	},
+	"app" : {
+		"HAVE_MAIL_TITLE": "Tienes un mail",
+		"HAVE_MAIL_MSG": "%1$@ has you a message titled \\\"%2$@\\\""
+    },
+    "general": {
+        "monday": "Lunes",
+        "tuesday": "Martes",
+        "wednesday": "Miércoles",
+        "thursday": "Jueves",
+        "friday": "Viernes",
+        "saturday": "Sábado",
+        "sunday": "Domingo",
+        "opened": "Abierto",
+        "closed": "Cerrado",
+        "fruit": "Fruta",
+        "vegetables": "Verdura",
+        "meat": "Carne",
+        "fish": "Pescado",
+        "quantity": "Cantidad",
+        "measure": "Kg",        
+        "data": "Datos",
+        "beneficiary": "Beneficiario",
+        "productSchedule": "Producto y horario",
+        "provider": "Proveedor",
+        "adress": "Dirección",
+        "province": "Provincia",
+        "town": "Municipio",
+        "postalCode": "Cod. Postal",
+        "telephone": "Teléfono",
+        "email": "E-mail",
+        "product": "Producto",
+        "schedule": "Horario",
+        "pickUp": "Recogida",
+        "delivery": "Entrega"
+    },
+    "errors": {
+        "errorUserPassword": "Error al introducir el usuario o la contraseña. Inténtelo de nuevo",
+        "errorConnecting": "Se ha producido un error al conectar con el servidor: ",
+        "errorUserInactive": "No se puede acceder con este usuario",
+        "errorConnection": "No tiene conexión a Internet. Compruebe su configuración",
+        "errorServingFood": "Debe seleccionar un producto y establecer una cantidad",
+        "errorVolunteerOther": "Otro voluntario ya ha confirmado la recogida y entrega de la donación",
+        "errorSetQuantity": "Debe establecer una cantidad",
+        "errorWrongQuantity": "Cantidad incorrecta"
+    },
+    "buttons": {
+        "access": "Acceder",
+        "send": "Enviar",
+        "back": "Volver",
+        "confirm": "Confirmar",
+        "confirmPickup": "Confirmar Recogida",
+        "confirmDelivaery": "Confirmar Entrega",
+        "cancel": "Cancelar",
+        "takeSelfie": "Tomar Selfie",
+        "AcceptSend": "Aceptar y enviar",
+        "retakeSelfie": "Repetir Selfie",
+        "finish": "Terminar",
+        "refresh": "Refrescar",
+        "acceptDonation": "Aceptar la donación"
+    },
+    "login": {
+        "user": "Usuario",
+        "userPlaceholder": "Introduzca nombre de usuario",
+        "password": "Contraseña",
+        "passwordPlaceholder": "Introduzca contraseña",
+        "showPass": "Mostrar contraseña"
+    },
+    "donations": {
+        "title": "Donación de alimentos",
+        "subtitle": "Selecciona el tipo de alimento y establece la cantidad",
+        "success": "La donación se ha comunicado con éxito. Queda a la espera de confirmación"
+    },
+    "volunteer": {
+        "title01": "Has recibido una petición de entrega de alimentos",
+        "title02": "Hay varias peticiones de entrega de alimentos",
+        "title03": "En este momento no hay entregas en tu zona",
+        "makePickup": "Ya puedes ir a la tienda a recoger la donación",
+        "makeDelivery": "Ya puedes realizar la entrega. Confírmala una vez que la hayas realizado",
+        "sendSelfie": "Envía el selfie de la confirmación de la entrega.",
+        "successDelivaery": "La entrega de la donación se ha completado con éxito"
+    },
+    "beneficiary": {
+        "title01": "Hay varias donaciones de alimentos en tu zona",
+        "subtitle01": "Elige una de la lista y pon una cantidad si quieres sólo una parte",
+        "title02": "Hay una donación de alimentos en tu zona",
+        "subtitle02": "Establece una cantidad para aceptar sólo una parte de la donación",
+        "title03": "En este momento no hay donaciones en tu zona",
+        "subtitle03": "Cuando haya alguna donación en tu zona te llegará una notificación",
+        "successPetition": "La petición de entrega de alimentos se ha completado con éxito. Queda a la espera de confirmación del envío"
+    }
+}
